@@ -27,15 +27,13 @@ aside {
     background-color: #292d30;
 }
 
-aside i.fa {
+aside i.la {
     font-size: 1.5em;
     color: whitesmoke;
+    cursor: pointer;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     flex: 0 0 90px;
     color: #fff;
     background-color: rgba(34, 76, 139, 0.9);
@@ -111,10 +109,11 @@ li:nth-child(2n) {
     margin-top: 0;
 }
 
-.catty-music div:nth-child(2) i.fa {
+.catty-music div:nth-child(2) i.la {
     font-size: 0.9rem;
     padding: 0 0.7em;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .catty-music-small {
@@ -139,4 +138,5 @@ li:nth-child(2n) {
 
 .music-controls i {
     font-size: 1.5em;
+    cursor: pointer;
 }
