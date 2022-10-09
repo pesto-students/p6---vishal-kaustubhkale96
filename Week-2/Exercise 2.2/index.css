@@ -15,34 +15,34 @@
     width: 100px;
     height: 100px;
     background-color: red;
+    animation: outswingleftup 1s 0s 1 normal forwards;
 }
 
 .card2 {
     width: 100px;
     height: 100px;
     background-color: green;
+    animation: outswingleftdown 1s 0s 1 normal forwards;
 }
 
 .card3 {
     width: 100px;
     height: 100px;
     background-color: yellow;
+    animation: outswingrightup 1s 0s 1 normal forwards;
 }
 
 .card4 {
     width: 100px;
     height: 100px;
     background-color: blue;
+    animation: outswingrightdown 1s 0s 1 normal forwards;
 }
 
 h3 {
     position: relative;
     bottom: 130px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-:root {
-    --anim-outswingleftup: unset;
 }
 
 .card-wrapper:hover .card1 {
@@ -73,10 +73,10 @@ h3 {
 
 @keyframes outswingleftup {
     0% {
-        transform: translateX(0px) rotate(0deg);
+        transform: translateX(-100px) rotate(90deg);
     }
     100% {
-        transform: translateX(100px) rotate(90deg);
+        transform: translateX(0px) rotate(0deg);
     }
 }
 
@@ -89,6 +89,15 @@ h3 {
     }
 }
 
+@keyframes outswingrightup {
+    0% {
+        transform: translateX(100px) rotate(90deg);
+    }
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
 @keyframes swingleftdown {
     0% {
         transform: translateX(0px) rotate(90deg);
@@ -98,11 +107,29 @@ h3 {
     }
 }
 
+@keyframes outswingleftdown {
+    0% {
+        transform: translateX(-100px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0px) rotate(90deg);
+    }
+}
+
 @keyframes swingrightdown {
     0% {
         transform: translateX(0px) rotate(90deg);
     }
     100% {
         transform: translateX(100px) rotate(0deg);
+    }
+}
+
+@keyframes outswingrightdown {
+    0% {
+        transform: translateX(100px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0px) rotate(90deg);
     }
 }
