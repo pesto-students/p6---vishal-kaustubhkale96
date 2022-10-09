@@ -59,12 +59,100 @@ img {
 }
 
 .form-container {
-    width: 800px;
-    margin: 25px auto;
+    width: 100%;
+    /* margin: 25px auto; */
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* width: 500px; */
+}
+
+.radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 250px;
+}
+
+.radio-wrapper label {
+    margin: 3px;
+}
+
+.radio-wrapper label:first-child {
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: 18px;
+    color: grey;
+}
+
+.radio-wrapper input[type="radio"] {
+    margin: 3px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: start;
+}
+
+.input-wrapper input {
+    border: none;
+    border-bottom: 1px solid;
+    margin: 2px auto;
+    width: 250px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-wrapper label {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 2px;
+    color: grey;
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px;
+}
+
+.select-wrapper label {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 2px;
+    color: grey;
+}
+
+.select-wrapper select {
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.tnc-wrapper {
+    margin: 10px auto;
+}
+
+.btn-wrapper {
+    width: 250px;
+}
+
+button {
+    background-color: rgb(114, 218, 236);
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 18px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
 }

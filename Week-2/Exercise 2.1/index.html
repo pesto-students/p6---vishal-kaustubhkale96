@@ -50,16 +50,12 @@
                 <div class="radio-wrapper">
                     <label>Title</label>
                     <div>
-                        <label>Mr</label>
-                        <input type="radio" />
-                    </div>
-                    <div>
-                        <label>Mrs</label>
-                        <input type="radio" />
-                    </div>
-                    <div>
-                        <label>Miss</label>
-                        <input type="radio" />
+                        <input type="radio" id="rad1" name="rad" />
+                        <label for="rad1">Mr</label>
+                        <input type="radio" id="rad2" name="rad" />
+                        <label for="rad2">Mrs</label>
+                        <input type="radio" id="rad3" name="rad" />
+                        <label for="rad3">Miss</label>
                     </div>
                 </div>
                 <div class="input-wrapper">
@@ -86,11 +82,23 @@
                     <label>Confirm password</label>
                     <input type="password" />
                 </div>
-                <div class="input-wrapper">
-                    <label>Confirm password</label>
-                    <input type="checkbox" />
+                <div class="select-wrapper">
+                    <label>Country</label>
+                    <select>
+                        <option selected="selected" disabled>Select country</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="India">India</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="India">India</option>
+                        <option value="Indonesia">Indonesia</option>
+                    </select>
                 </div>
-                <div>
+                <div class="tnc-wrapper">
+                    <input type="checkbox" />
+                    <label>I agree to the <a href="https://policies.google.com/terms">terms of service</a> </label>
+                </div>
+                <div class="btn-wrapper">
                     <button>Sign up</button>
                 </div>
             </form>
