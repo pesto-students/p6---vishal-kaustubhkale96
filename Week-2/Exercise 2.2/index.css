@@ -7,7 +7,8 @@
 
 .card-wrapper {
     display: inline-flex;
-    z-index: 10;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .card1 {
@@ -25,13 +26,13 @@
 .card3 {
     width: 100px;
     height: 100px;
-    background-color: blue;
+    background-color: yellow;
 }
 
 .card4 {
     width: 100px;
     height: 100px;
-    background-color: yellow;
+    background-color: blue;
 }
 
 h3 {
@@ -44,24 +45,20 @@ h3 {
     --anim-outswingleftup: unset;
 }
 
-.card-wrapper:not(hover) .card1 {
-    animation: outswingleftup 1.5s 0s 1 linear forwards;
-}
-
 .card-wrapper:hover .card1 {
-    animation: swingleftup 1.5s 0s 1 linear forwards;
+    animation: swingleftup 1s 0s 1 normal forwards;
 }
 
 .card-wrapper:hover .card2 {
-    animation: swingleftdown 1.5s 0s 1 linear forwards;
+    animation: swingleftdown 1s 0s 1 normal forwards;
 }
 
 .card-wrapper:hover .card3 {
-    animation: swingrightup 1.5s 0s 1 linear forwards;
+    animation: swingrightup 1s 0s 1 normal forwards;
 }
 
 .card-wrapper:hover .card4 {
-    animation: swingrightdown 1.5s 0s 1 linear forwards;
+    animation: swingrightdown 1s 0s 1 normal forwards;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
