@@ -5,15 +5,15 @@ function vowelCount(string) {
     for (let str of string) {
         if (vowels.includes(str)) { // check if vowels string includes input string letters
             if (vowelMap.has(str)) { //check if value is present in map
-                console.log('if vowels=>', vowelMap)
+
                 let temp = vowelMap.get(str) + 1; // gets the value corresponding to key & add 1
                 vowelMap.set(str, temp); // sets key and value
             } else {
-                console.log('else vowels=>', vowelMap)
+
                 vowelMap.set(str, 1);
             }
         }
-        console.log('out=>', vowelMap)
+
     }
     return vowelMap;
 }
