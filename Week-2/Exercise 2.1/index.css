@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.main-container {
+    width: 1200px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.header {
+    margin: 40px auto;
+    font-size: 24px;
+    text-align: center;
+    width: 400px;
+}
+
+.block-wrapper {
+    display: inline-flex;
+    margin: 25px auto;
+}
+
+.first-block {
+    display: inline-flex;
+    margin: 20px;
+    padding: 10px;
+}
+
+.second-block {
+    display: inline-flex;
+    margin: 20px;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.bold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+img {
+    width: 420px;
+}
+
+.block-text {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 100%;
+    /* margin: 25px auto; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 500px; */
+}
+
+.radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 250px;
+}
+
+.radio-wrapper label {
+    margin: 3px;
+}
+
+.radio-wrapper label:first-child {
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-size: 18px;
+    color: grey;
+}
+
+.radio-wrapper input[type="radio"] {
+    margin: 3px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: start;
+}
+
+.input-wrapper input {
+    border: none;
+    border-bottom: 1px solid;
+    margin: 2px auto;
+    width: 250px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-wrapper label {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 2px;
+    color: grey;
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px;
+}
+
+.select-wrapper label {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 2px;
+    color: grey;
+}
+
+.select-wrapper select {
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.tnc-wrapper {
+    margin: 10px auto;
+}
+
+.btn-wrapper {
+    width: 250px;
+}
+
+button {
+    background-color: rgb(114, 218, 236);
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 18px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
